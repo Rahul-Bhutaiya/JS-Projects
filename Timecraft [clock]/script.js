@@ -1,4 +1,3 @@
-// localStorage.setItem
 
 const wrapper=document.getElementById('wrapper');
 const clockContainer=document.querySelector('.clock-container');
@@ -10,6 +9,8 @@ const toggleElement=document.querySelector('input');
 const sunIcon=document.querySelector('#sun');
 const moonIcon=document.querySelector('#moon');
 const modeManager=document.querySelector('#current-mode');
+const bottomLine=document.querySelector('h1');
+
 clockContainer.style.cssText='background-color:white';
 if(window.outerWidth<=500){
     modeManager.style.cssText='box-shadow: 0px 0px 3px black;transform: translateX(2.3rem); background-color: black;';
@@ -24,6 +25,7 @@ function handleMode(){
         toggleElement.style.cssText='background-color: black;box-shadow: 0px 0px 3px white;';
         sunIcon.style.cssText='color:#1d3557';
         moonIcon.style.cssText='color:#1d3557';
+        bottomLine.style.cssText='color:white;text-shadow: 0px 0px 10px white;';
         modeManager.style.cssText='box-shadow: 0px 0px 3px white;transform: translateX(0.2rem); background-color: white;';
         clockContainer.style.cssText='box-shadow: 0 0 20px 5px white; border-color:white; background-color: black';
         hands[0].style.cssText='background-color:white; box-shadow: 0 0 10px 1px white';
@@ -34,6 +36,7 @@ function handleMode(){
         toggleElement.style.cssText='background-color: white;box-shadow: 0px 0px 3px black;';
         sunIcon.style.cssText='color:#ffb703';
         moonIcon.style.cssText='color:#ffb703';
+        bottomLine.style.cssText='color:black;text-shadow: 0px 0px 10px black;';
         if(window.outerWidth<=500){
             modeManager.style.cssText='box-shadow: 0px 0px 3px black;transform: translateX(2.3rem); background-color: black;';
         }
