@@ -115,6 +115,14 @@
     transition: all 0.5s ease;
 }
 
+h1{
+    position: absolute;
+    bottom: 1rem;
+    font-family: 'Smooch', cursive;
+    text-shadow: 0px 0px 10px black;
+    letter-spacing: 2px;
+}
+
 @media (max-width:500px){
     .clock-container{
         min-width: 200px;
@@ -148,5 +156,22 @@
         height: 1.5rem;
         width: 1.5rem;
         top: 13%;
+    }
+    h1{
+        bottom: 5rem;
+    }
+}
+@media (max-width:360px){
+    .clock-container{
+        min-width: 150px;
+        min-height:150px;
+        max-height:150px;
+        max-width: 150px;
+        aspect-ratio: 1/1;
+    }   
+    
+    h1{
+        bottom: 10rem;
+        font-size: 1.5rem;
     }
 }
