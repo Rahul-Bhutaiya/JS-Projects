@@ -166,7 +166,7 @@ h1{
         top: 13%;
     }
     h1{
-        bottom: 5rem;
+        bottom: 6rem;
     }
 }
 @media (max-width:360px){
@@ -186,8 +186,8 @@ h1{
     }
 
     #heading{
-        left: 1rem;
-        top:5rem;
+        left: 0.8rem;
+        top:4rem;
         transform: rotate(-45deg);
         transform-origin: left top;
     }
